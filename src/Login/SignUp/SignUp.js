@@ -1,10 +1,9 @@
 import React from 'react';
-import {Link} from 'react'
 
-const LogIn = () => {
+const SignUp = () => {
     return (
         <div>
-            <div class="hero min-h-screen">
+             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row">
                     <div class="text-center lg:text-left">
                     <h1 class="text-5xl font-bold">লগ ইন কর!</h1>
@@ -12,6 +11,18 @@ const LogIn = () => {
                     </div>
                     <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <div class="card-body">
+                        <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">তোমার নাম </span>
+                        </label>
+                        <input type="text" placeholder="তোমার নাম লেখ" class="input input-bordered" />
+                        </div>
+                        <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">তোমার নাম </span>
+                        </label>
+                        <input type="text" placeholder="তোমার নাম লেখ" class="input input-bordered" />
+                        </div>
                         <div class="form-control">
                         <label class="label">
                             <span class="label-text">ইমেইল</span>
@@ -22,15 +33,13 @@ const LogIn = () => {
                         <label class="label">
                             <span class="label-text">পাসওয়ার্ড </span>
                         </label>
-                        <input type="text" placeholder="তোমার পাসওয়ার্ড দাও" class="input input-bordered" />
+                        <input type="password" placeholder="তোমার পাসওয়ার্ড দাও" class="input input-bordered" />
                         <label class="label">
                             <a href="#" class="label-text-alt link link-hover">পাসওয়ার্ড ভুলে গেছ?</a>
                         </label>
                         </div>
                         <div class="form-control mt-6">
                         <button class="btn btn-primary">লগইন</button>
-                        <div class="divider">OR</div>
-                    <button class="btn btn-primary text-white">Continue With Google</button>
                         </div>
                     </div>
                     </div>
@@ -40,4 +49,4 @@ const LogIn = () => {
     );
 };
 
-export default LogIn;
+export default SignUp;
