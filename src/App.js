@@ -1,12 +1,17 @@
 import './App.css';
-import Home from './Home/Home';
 import Navbar from './Shared/Navbar';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from './Home/Home';
+import LogIn from './Login/LogIn';
 
 function App() {
   return (
     <div className="App max-w-7xl mx-auto px-12">
       <Navbar></Navbar>
-      <Home></Home>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LogIn />} />
+      </Routes>
     </div>
   );
 }
