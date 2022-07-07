@@ -6,7 +6,18 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/teachers">Teachers</Link></li>
         <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/results">Results</Link></li>
+            <div class="dropdown">
+                    <label tabindex="0" class="btn m-1 bg-accent">Results</label>
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><Link to="/results">Class 6</Link></li>
+                        <li><Link to="/results7">Class 7</Link></li>
+                        <li><Link to="/results8">Class 8</Link></li>
+                        <li><Link to="/results9">Class 9</Link></li>
+                        <li><Link to="/results10">Class 10</Link></li>
+                        
+                        
+                    </ul>
+            </div>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/about">About Us</Link></li>
         <li><Link to="/login">Login</Link></li>
