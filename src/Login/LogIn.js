@@ -44,9 +44,9 @@ const Login = () => {
                                 className="input input-bordered w-full max-w-xs"/>
                         </div>
 
-                            <input  className="btn w-full max-w-xs text-white" type="submit" value="LOG IN" />
+                            <input  className="btn w-full max-w-xs text-white mt-4" type="submit" value="লগ ইন" />
                             </form>
-                    <p>এখানে নতুন?<Link className='text-primary' to="/signup">নতন অ্যাকাউন্ট করুন</Link></p>
+                    <p >এখানে নতুন?<Link className='text-primary' to="/signup">নতন অ্যাকাউন্ট করুন</Link></p>
                     <div class="divider">OR</div>
                     <button  class="btn btn-primary text-white">গুগল দিয়ে লগ ইন</button>
                     
