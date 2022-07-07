@@ -9,6 +9,7 @@ import Contact from './Contact/Contact';
 import About from './About/About';
 import Result from './Results/Result';
 import SignUp from './Login/SignUp';
+import Result7 from './Results/Results7/Result7';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About/>}/>
         <Route path="/results" element={<Result/>}/>
+        <Route path="/results7" element={<Result7/>}/>
         <Route path="/signup" element={<SignUp/>}/>
       </Routes>
     </div>
