@@ -18,12 +18,13 @@ const Login = () => {
         <div className='flex justify-center h-screen items-center'>
                 <div class="card w-96  bg-base-100 shadow-xl">
                     <div class="card-body">
-                    <h2 class="text-center text-2xl font-bold">Log In</h2>
+                        
+                      <h2 class="text-center text-2xl font-bold">Log In</h2>
 
                             <form>
 
 
-                            <div className="form-control w-full max-w-xs">
+                        <div className="form-control w-full max-w-xs">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
