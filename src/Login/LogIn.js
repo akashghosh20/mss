@@ -1,43 +1,58 @@
 import React from 'react';
-import {Link} from 'react'
+import { Link} from 'react-router-dom';
 
-const LogIn = () => {
+
+const Login = () => {
+  
+
+ 
+
+    
+
+
+    
+ 
+
+
     return (
-        <div>
-            <div class="hero min-h-screen">
-                <div class="hero-content flex-col lg:flex-row">
-                    <div class="text-center lg:text-left">
-                    <h1 class="text-5xl font-bold">লগ ইন কর!</h1>
-                    <p class="py-6">তুমি তোমার ড্যাশবোর্ড দেখতে লগইন কর অথবা নতুন এক্যাউন্ট তৈরি কর</p>
-                    </div>
-                    <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className='flex justify-center h-screen items-center'>
+                <div class="card w-96  bg-base-100 shadow-xl">
                     <div class="card-body">
-                        <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">ইমেইল</span>
-                        </label>
-                        <input type="text" placeholder="তোমার ইমেইল দাও" class="input input-bordered" />
+                    <h2 class="text-center text-2xl font-bold">Log In</h2>
+
+                            <form>
+
+
+                            <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                className="input input-bordered w-full max-w-xs" />
+                           
                         </div>
-                        <div class="form-control">
-                        <label class="label">
-                            <span class="label-text">পাসওয়ার্ড </span>
-                        </label>
-                        <input type="text" placeholder="তোমার পাসওয়ার্ড দাও" class="input input-bordered" />
-                        <label class="label">
-                            <a href="#" class="label-text-alt link link-hover">পাসওয়ার্ড ভুলে গেছ?</a>
-                        </label>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                className="input input-bordered w-full max-w-xs"/>
                         </div>
-                        <div class="form-control mt-6">
-                        <button class="btn btn-primary">লগইন</button>
-                        <div class="divider">OR</div>
-                    <button class="btn btn-primary text-white">Continue With Google</button>
-                        </div>
-                    </div>
-                    </div>
+
+                            <input  className="btn w-full max-w-xs text-white" type="submit" value="LOG IN" />
+                            </form>
+                    <p>New to Here?<Link className='text-primary' to="/signup">Create New Account</Link></p>
+                    <div class="divider">OR</div>
+                    <button  class="btn btn-primary text-white">Continue With Google</button>
+                    
                 </div>
-                </div>
+           </div>
         </div>
     );
 };
 
-export default LogIn;
+export default Login;
