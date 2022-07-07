@@ -5,6 +5,9 @@ import Home from './Home/Home';
 import LogIn from './Login/LogIn';
 import Teachers from './Teachers/Teachers';
 import Gallery from './Gallery/Gallery';
+import Contact from './Contact/Contact';
+import About from './About/About';
+import Result from './Results/Result';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path="/login" element={<LogIn />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About/>}/>
+        <Route path="/result" element={<Result/>}/>
       </Routes>
     </div>
   );
