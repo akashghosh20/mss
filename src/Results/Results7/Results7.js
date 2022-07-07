@@ -13,7 +13,7 @@ const Results7 = () => {
          
     return (
         <div className='my-10'>
-        <h4 className='text-3xl text-secondary text-center my-12 font-bold'>Results of Class Six </h4>
+        <h4 className='text-3xl text-secondary text-center my-12 font-bold'>Results of Class Seven </h4>
        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
            {
                results7.map(result7 => <Results7Show
