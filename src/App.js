@@ -12,6 +12,7 @@ import SignUp from './Login/SignUp';
 import Result7 from './Results/Results7/Result7';
 import Result8 from './Results/Results8/Result8';
 import Result9 from './Results/Results9/Result9';
+import Result10 from './Results/Results10/Result10';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/results7" element={<Result7/>}/>
         <Route path="/results8" element={<Result8/>}/>
         <Route path="/results9" element={<Result9/>}/>
+        <Route path="/results10" element={<Result10/>}/>
         <Route path="/signup" element={<SignUp/>}/>
       </Routes>
     </div>
