@@ -1,16 +1,19 @@
 import React from 'react';
 
-const ResultsShow = ({resul}) => {
+const ResultsShow = ({result}) => {
+
+   
   
     return (
-       <div>
-<div class="card-body text-center">
-                <h2 class="text-xl font-bold text-secondary">Results of Class Six is Here</h2>
-                <p>{resul.class}</p>
-                <p>{resul.newClassRoll}</p>
-                <p>{resul.totalNumber}</p> 
-            </div>
-       </div>
+      
+    <div class="card w-96 bg-base-100 shadow-xl image-full">
+       
+        <div class="card-body">
+          <h2 className="text-center text-primary">{result.Name}</h2>
+          <p>Obtained Marks:{result.TotalMarks}</p>
+          
+        </div>
+      </div>
     );
 };
 

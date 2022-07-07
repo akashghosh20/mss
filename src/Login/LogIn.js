@@ -1,21 +1,18 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../firebase.init';
 
 
 const Login = () => {
+    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
-   
   
+      if (user) {
+       console.log(user);
+      }
 
  
-
-    
-
-
-    
- 
-
-
     return (
         <div className='flex justify-center h-screen items-center'>
                 <div class="card w-96  bg-base-100 shadow-xl">
@@ -50,7 +47,9 @@ const Login = () => {
                             </form>
                     <p >এখানে নতুন?<Link className='text-primary' to="/signup">নতন অ্যাকাউন্ট করুন</Link></p>
                     <div class="divider">OR</div>
-                    <button  class="btn btn-primary text-white">গুগল দিয়ে লগ ইন</button>
+                    <button  
+                    onClick={()=> signInWithGoogle()}
+                    class="btn btn-primary text-white">গুগল দিয়ে লগ ইন</button>
                     
                 </div>
            </div>
